@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form method="POST" id="signup-form" class="signup-form" enctype="multipart/form-data">
+                <h3>
+                    Account
+                </h3>
+                <fieldset>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="form-select">
+                            <label for="country">Country</label>
+                            <div class="select-group">
+                                <select name="country" id="country">
+                                    <option value=""></option>
+                                    <option value="Vn">Viet Nam</option>
+                                    <option value="US">United States America</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Your password</label>
+                            <input type="password" name="password" id="password" />
+                        </div>
+                        <div class="form-select">
+                            <label for="country">Daily budget</label>
+                            <div class="select-group">
+                                <select name="daily_budget" id="daily_budget">
+                                    <option value=""></option>
+                                    <option value="40$">40$</option>
+                                    <option value="60$">60$</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>Subscribe to out newletter</label>
+                    </div>
+                </fieldset>
+
+                <h3>
+                    Room type
+                </h3>
+                <fieldset>
+                    <div class="form-radio">
+                        <label for="room_type" class="radio-label">What type of room would you want?</label>
+                        <div class="form-radio-group">            
+                            <div class="form-radio-item">
+                                <input type="radio" name="room_type" id="single_room">
+                                <label for="single_room">Single room</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="room_type" id="family_room">
+                                <label for="family_room">Family room</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="room_type" id="business_room" checked>
+                                <label for="business_room">Business room</label>
+                                <span class="check"></span>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <h3>
+                    Extra details
+                </h3>
+                <fieldset> 
+
+                    <div class="form-textarea">
+                        <label for="room_description" class="radio-label">Room description</label>
+                        <textarea name="room_description" id="room_description" placeholder="Eg : The room must have air conditional . . ."></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
